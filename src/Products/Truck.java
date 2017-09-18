@@ -18,12 +18,12 @@ public class Truck extends LoadingVehicle{
 	@Override
 	public String toString() {
 		return "=======Truck====== \nnumOfSeats: " + numOfSeats + "\nloadCapacity: " + loadCapacity + "\nnumOfAxles: " + numOfAxles
-				+ "\ntypeEngine: " + typeEngine + ", euroStandart: " + euroStandart + "\ntransmission: " + transmission
+				+ "\ntypeEngine: " + typeEngine + "\neuroStandart: " + euroStandart + "\ntransmission: " + transmission
 				+ "\ncategoryVehicle: " + categoryVehicle + "\nmileage: " + mileage + "\nmarka: " + marka + "\ncubic: "
-				+ cubic + "\nID=" + ID + ", title: " + title + "\ncondition=" + condition + "\nmanufacturing: "
-				+ manufacturing + "\nprice: " + price + "\ncolor: " + color + "vdateUpload: " + dateUpload + "\nemail: "
+				+ cubic + "\nID: " + ID + "\ntitle: " + title + "\ncondition: " + condition + "\nmanufacturing: "
+				+ manufacturing + "\nprice: " + price + "\ncolor: " + color + "\ndateUpload: " + dateUpload + "\nemail: "
 				+ email + "\nphoneNum: " + phoneNum + "\nregionToSale: " + regionToSale + "\nexpiryDate: " + expiryDate
-				+ "\ntypeProduct: " + typeProduct + "\nimages=" + Arrays.toString(images) + "\n";
+				+ "\ntypeProduct: " + typeProduct +"\nimages: " + Arrays.toString(images) + "\n";
 	}
 	
 	
