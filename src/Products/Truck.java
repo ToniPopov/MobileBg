@@ -1,5 +1,7 @@
 package Products;
 
+import java.util.Arrays;
+
 import Enums.Transmission;
 import Enums.TypeEngine;
 import Enums.VehicleCategory;
@@ -11,6 +13,17 @@ public class Truck extends LoadingVehicle{
 			int mileage, String marka, int cubic, int numOfSeats, int loadCapacity, int numOfAxles) {
 		super(title, condition, price, color, email, phoneNum, typeEngine, euroStandart, transmission, categoryVehicle, mileage,
 				marka, cubic, numOfSeats, loadCapacity, numOfAxles);
+	}
+
+	@Override
+	public String toString() {
+		return "=======Truck====== \nnumOfSeats: " + numOfSeats + "\nloadCapacity: " + loadCapacity + "\nnumOfAxles: " + numOfAxles
+				+ "\ntypeEngine: " + typeEngine + ", euroStandart: " + euroStandart + "\ntransmission: " + transmission
+				+ "\ncategoryVehicle: " + categoryVehicle + "\nmileage: " + mileage + "\nmarka: " + marka + "\ncubic: "
+				+ cubic + "\nID=" + ID + ", title: " + title + "\ncondition=" + condition + "\nmanufacturing: "
+				+ manufacturing + "\nprice: " + price + "\ncolor: " + color + "vdateUpload: " + dateUpload + "\nemail: "
+				+ email + "\nphoneNum: " + phoneNum + "\nregionToSale: " + regionToSale + "\nexpiryDate: " + expiryDate
+				+ "\ntypeProduct: " + typeProduct + "\nimages=" + Arrays.toString(images) + "\n";
 	}
 	
 	
