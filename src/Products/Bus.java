@@ -20,10 +20,22 @@ public class Bus extends LoadingVehicle {
 		return "=======Bus====== \nnumOfSeats: " + numOfSeats + "\nloadCapacity: " + loadCapacity + "\nnumOfAxles: "
 				+ numOfAxles + "\ntypeEngine: " + typeEngine + "\neuroStandart: " + euroStandart + "\ntransmission: "
 				+ transmission + "\ncategoryVehicle: " + categoryVehicle + "\nmileage: " + mileage + "\nmarka: " + marka
-				+ "\ncubic: " + cubic + "\nID: " + ID + "\ntitle: " + title + "\ncondition: " + condition
+				+ "\ncubic: " + cubic + "\nID: " + ID + "\ntitle: " + title + "\ncondition: " + conditions
 				+ "\nmanufacturing: " + manufacturing + "\nprice: " + price + "\ncolor: " + color + "\ndateUpload: "
 				+ dateUpload + "\nemail: " + email + "\nphoneNum: " + phoneNum + "\nregionToSale: " + regionToSale
 				+ "\nexpiryDate: " + expiryDate + "\ntypeProduct: " + typeProduct + "\nimages: "
 				+ Arrays.toString(images) + "\n";
+	}
+
+
+	public String toStringForInsert() {
+		return  " '"+numOfSeats + "' , '" + loadCapacity +"' , '"
+				+ numOfAxles + "' , '" + typeEngine + "' , '"+ euroStandart +"' , '"
+				+ transmission + "' , '" + categoryVehicle + "' , '"+ mileage + "' , '" + marka
+				+"' , '"+ cubic +"' , '" + ID + "' , '" + title +"' , '" + conditions
+				+ "' , '" + manufacturing +"' , '" + price + "' , '"+ color + "' , '"
+				+ dateUpload + "' , '" + email + "' , '" + phoneNum + "' , '" + regionToSale
+				+ "' , '"+ expiryDate + "' , '" + typeProduct + "' , '"
+				+ Arrays.toString(images) +"'";
 	}
 }

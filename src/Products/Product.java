@@ -9,7 +9,7 @@ public abstract class Product {
 
 	protected long ID;
 	protected String title;
-	protected Condition condition;
+	protected Condition conditions;
 	protected Date manufacturing;
 	protected double price;
 	protected String color;
@@ -29,7 +29,7 @@ public abstract class Product {
 		if (price > 0) {
 			this.price = price;
 		}
-		this.condition = condition;
+		this.conditions = condition;
 		this.typeProduct = this.getClass().getSimpleName();
 		this.dateUpload = new Date(); // when we create a product we aded a date
 	}
