@@ -12,4 +12,10 @@ public class Automobile extends MotorProduct {
 		super(title, condition, price, color, email, phoneNum, typeEngine, euroStandart, transmission, categoryVehicle,
 				mileage, marka, cubic);
 	}
+
+	@Override
+	public String toStringForInsert() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -13,4 +13,10 @@ public class Jeep extends MotorProduct{
 				marka, cubic);
 	}
 
+	@Override
+	public String toStringForInsert() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
