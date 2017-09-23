@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import Products.Bus;
+import Products.Insertable;
 
 public class Db_Connection {
 	private Connection con;
@@ -30,7 +31,8 @@ public class Db_Connection {
 		}
 	}
 
-	public boolean insert(Bus bus) {
+	public boolean insert(Insertable bus) {
+		
 
 		List<Field> fieldList = new ArrayList<Field>();
 		Class<?> tmpClass = bus.getClass();

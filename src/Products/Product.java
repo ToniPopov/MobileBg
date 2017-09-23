@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class Product {
+public abstract class Product implements Insertable{
 
 	protected long ID;
 	protected String title;
