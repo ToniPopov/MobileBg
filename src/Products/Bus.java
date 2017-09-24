@@ -1,12 +1,13 @@
 package Products;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 import Enums.Transmission;
 import Enums.TypeEngine;
 import Enums.VehicleCategory;
 
-public class Bus extends LoadingVehicle {
+public class Bus extends LoadingVehicle implements Serializable{
 
 	public Bus(String title, Condition condition, double price, String color, String email, String phoneNum,
 			TypeEngine typeEngine, int euroStandart, Transmission transmission, VehicleCategory categoryVehicle,
@@ -14,7 +15,11 @@ public class Bus extends LoadingVehicle {
 		super(title, condition, price, color, email, phoneNum, typeEngine, euroStandart, transmission, categoryVehicle,
 				mileage, marka, cubic, numOfSeats, loadCapacity, numOfAxles);
 	}
-
+	public Bus(String title, String email, String phoneNum) {
+		super(title,  email,  phoneNum);
+	}
+	
+	
 	@Override
 	public String toString() {
 		return "=======Bus====== \nnumOfSeats: " + numOfSeats + "\nloadCapacity: " + loadCapacity + "\nnumOfAxles: "

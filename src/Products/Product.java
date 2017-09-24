@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class Product implements Insertable{
+public abstract class Product implements Insertable {
 
 	protected long ID;
 	protected String title;
@@ -21,7 +21,7 @@ public abstract class Product implements Insertable{
 	protected String typeProduct;
 	protected Image[] images;
 
-	Product(String title, Condition condition, double price, String color, String email,String phoneNum) {
+	Product(String title, Condition condition, double price, String color, String email, String phoneNum) {
 		this.title = stringValidate(title);
 		this.color = stringValidate(color);
 		this.email = isValidEmailId(email);
@@ -33,10 +33,11 @@ public abstract class Product implements Insertable{
 		this.typeProduct = this.getClass().getSimpleName();
 		this.dateUpload = new Date(); // when we create a product we aded a date
 	}
-	// Product( ){
-	// typeProduct = this.getClass().getSimpleName();
-	// this.phoneNum= phoneNumValidator( phoneNum);
-	// }
+
+	Product(String title, String email, String phoneNum) {
+		this.title = stringValidate(title);
+		this.email = isValidEmailId(email);
+	}
 
 	private String stringValidate(String str) {
 

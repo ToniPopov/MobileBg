@@ -39,4 +39,8 @@ public abstract class MotorProduct extends Product {
 		}
 	}
 
+	public MotorProduct(String title, String email, String phoneNum) {
+		super(title, email, phoneNum);
+	}
+
 }

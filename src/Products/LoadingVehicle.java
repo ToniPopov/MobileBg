@@ -20,6 +20,10 @@ public abstract class LoadingVehicle extends MotorProduct {
 		this.numOfAxles = checkInt(numOfAxles);
 	}
 
+	public LoadingVehicle(String title, String email, String phoneNum) {
+		super(title,  email,  phoneNum);
+	}
+
 	private int checkInt(int i) {
 		if (i > 0) {
 			return i;
