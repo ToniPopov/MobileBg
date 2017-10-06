@@ -32,7 +32,6 @@ public class Bus extends LoadingVehicle implements Serializable{
 				+ Arrays.toString(images) + "\n";
 	}
 
-
 	public String toStringForInsert() {
 		return  " '"+numOfSeats + "' , '" + loadCapacity +"' , '"
 				+ numOfAxles + "' , '" + typeEngine + "' , '"+ euroStandart +"' , '"
