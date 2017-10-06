@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class User {
-	private String ID;
+	private long id;
 	private String email;
 	private String userName;
 	private String firstName;
@@ -16,7 +16,7 @@ public class User {
 	//TODO: private Set<Ad> ads;
 
 	// For normal user
-	public User(String ID, String email, String userName, String firstName, String lastName, String password, String confirmPass) {
+	public User(long id, String email, String userName, String firstName, String lastName, String password, String confirmPass) {
 		this.ID = ID; //TODO: Verification for unique ID
 		
 		isValidEmailId(email); //TODO: maybe change it to boolean
@@ -40,7 +40,7 @@ public class User {
 	}
 
 	// For dealer
-	public User(String ID, String email, String userName, String firstName, String password, String confirmPass) {
+	public User(long id, String email, String userName, String firstName, String password, String confirmPass) {
 		this.ID = ID; //TODO: Verification for unique ID
 		
 		isValidEmailId(email); //TODO: maybe change it to boolean
