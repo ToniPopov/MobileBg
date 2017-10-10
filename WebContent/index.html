@@ -1,20 +1,982 @@
+<!--
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
 </head>
 <body>
 
-	<form action="upload" method="post" enctype="multipart/form-data">
-		Select image to upload: 
-		<input type = "text" name = "check">
-		<input type="file" name="fileToUpload" id="fileToUpload">
-		 <input type="submit" value="Upload Image" name="submit">
-	</form>
-<!-- <form name="Myform" method="get" action="getpost"> -->
-<!-- 		First name: <input type="text" name="fname">  -->
-<!-- 		<input type="submit" value="ok"> -->
-<!-- 	</form> -->
+<form action="../upload" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="text" name="check">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<form method="get" action="../src/DemoTest/Demo.java">
+    First name: <input type="text" name="fname">
+    <input type="submit" value="ok">
+</form>
 </body>
-</html>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.mobile.bg/pcgi/mobile.cgi?pubtype=1&act=1 -->
+<html lang="bg"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+    <title>Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg</title>
+    <meta name="description" content="Публикувайте вашата обява за продажба на Автомобили в Mobile.bg - най-големият сайт за Автомобили">
+    <meta name="Keywords" content="авто, автомобили, продажба, обяви, авто обяви, автокъщи, автокъща, коли, джипове, бусове, ванове, камиони, мотоциклети, селскотопански машини, строителни машини, каравани">
+    <meta name="author" content="Copyright © Reason Ltd">
+    <meta name="rating" content="General">
+    <meta name="ROBOTS" content="All">
+    <meta name="robots" content="noodp">
+    <meta name="revisit-after" content="2 days">
+    <link rel="SHORTCUT ICON" href="https://www.mobile.bg/favicon.ico">
+    <link rel="stylesheet" href="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/styless.css" type="text/css">
+    <script async="async" defer="defer" src="https://gabg.hit.gemius.pl/xgemius.js"></script><script async="" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/analytics.js.изтеглен файл"></script><script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/jquery.min.js.изтеглен файл"></script>
+    <script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/cmmvars.js.изтеглен файл"></script>
+    <link href="https://plus.google.com/103020139175759496457" rel="publisher">
+    <script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/scripts.js.изтеглен файл"></script>
+    <script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/dim.js.изтеглен файл"></script>
+    <script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/ac_runactivecontent.js.изтеглен файл"></script>
+    <script type="text/javascript" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/mobile-detect.js.изтеглен файл"></script>
+    <script type="text/javascript">
+        <!--
+        var md = new MobileDetect(window.navigator.userAgent);
+        if ( md && md.mobile() && (md.tablet()==null) )
+        {
+            var mvc=getCookie('full');
+            if ( mvc!='1' ) document.location.href='https://m.mobile.bg/';
+        }
+        function setpub(fpub,floc,name1,name2,pref)
+        {
+            if ( document.pub )
+                if ( (fpub)&&(floc) )
+                {
+                    if ( pref==1 )
+                    {
+                        if ( name1.src.indexOf('pub_n.gif')>0 )
+                        {
+                            name1.src='//www.mobile.bg/images/picturess/pub_y.gif';
+                            window.open('//www.mobile.bg/htmls/limit.html','limitinfo','width=536,height=100,toolbar=0,menubar=0,scrollbars=1,status=0,resizable=0,screenx=225,screeny=230');
+                        }
+                        else
+                        {
+                            name1.src='//www.mobile.bg/images/picturess/pub_n.gif';
+                        }
+                    }
+                    if ( (pref==2)&&(name2.src.indexOf('no.gif')==-1) )
+                    {
+                        if ( name2.src.indexOf('pub_n.gif')>0 )
+                        {
+                            name2.src='//www.mobile.bg/images/picturess/pub_y.gif';
+                        }
+                        else
+                        {
+                            name2.src='//www.mobile.bg/images/picturess/pub_n.gif';
+                        }
+                    }
+
+                    ch=0;
+                    if ( (name1.src.indexOf('pub_n.gif')>0) &&
+                        (name2.src.indexOf('pub_n.gif')>0) )
+                        ch='0';
+                    if ( (name1.src.indexOf('pub_y.gif')>0) &&
+                        ((name2.src.indexOf('pub_n.gif')>0)||(name2.src.indexOf('no.gif')>0)) )
+                        ch='9';
+                    if ( (name1.src.indexOf('pub_n.gif')>0) &&
+                        (name2.src.indexOf('pub_y.gif')>0) )
+                    {
+                        paper='';
+                        if ( floc.selectedIndex>=0 )
+                            paper=floc.options[floc.selectedIndex].value;
+                        if ( paper=='София' )
+                            ch='10'
+                        else
+                            ch='12';
+                    }
+                    if ( (name1.src.indexOf('pub_y.gif')>0) &&
+                        (name2.src.indexOf('pub_y.gif')>0) )
+                    {
+                        paper='';
+                        if ( floc.selectedIndex>=0 )
+                            paper=floc.options[floc.selectedIndex].value;
+                        if ( paper=='София' )
+                            ch='11'
+                        else
+                            ch='13';
+                    }
+                    if ( (0<=ch) && (ch<=15) )
+                        fpub.value=ch;
+                }
+        }
+
+        //-->
+    </script>
+
+    <script type="text/javascript">
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-6653939-1', { 'cookieDomain': 'mobile.bg', 'sampleRate': 10 });
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body onload="javascript:MM_preloadImages(&#39;//www.mobile.bg/images/picturess/tm1_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm2_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm3_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm4_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm5_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm6_sel.gif&#39;,&#39;//www.mobile.bg/images/picturess/tm7_sel.gif&#39;);if(window.startw)startw();">
+
+
+
+
+<div class="regWindow" id="regWindow">
+    <div class="panel">
+        <div class="buttons">
+            <a href="javascript:regFormTab1();" class="selected" id="btnTab1">Вход</a><a href="javascript:regFormTab2();" class="unselected" id="btnTab2">Нова регистрация</a>
+        </div>
+        <div class="formVhod" id="formVhod" style="display:;">
+            <a href="javascript:closeReg();" class="close" title="Затвори"></a>
+            <div id="login_iframe"></div>
+            <a href="javascript:closeReg();" class="btnAnulirai">Анулирай</a>
+        </div>
+        <div class="formReg" id="formReg" style="display:;">
+            <a href="javascript:closeReg();" class="close" title="Затвори"></a>
+            <div id="register_iframe"></div>
+            <div style="text-align:center; margin:10px 0 0 0;">
+                <a href="https://www.mobile.bg/pcgi/mobile.cgi?act=6&amp;subact=2" class="forgotenPass">За регистрация на юридически лица извършващи<br>дейност при сделки с моторни превозни средства, кликнете <strong>ТУК ›</strong></a>
+            </div>
+            <a href="javascript:closeReg();" class="btnAnulirai">Анулирай</a>
+        </div>
+    </div>
+</div>
+
+
+<div id="mainholder">
+
+    <table class="tablereset width980px m-t-20">
+        <tbody><tr>
+            <td class="valgtop">
+                <div style="float:left;"><a href="https://www.mobile.bg/"></a></div>
+
+            </td>
+        </tr>
+        </tbody></table>
+
+    <table class="tablereset width980px">
+        <tbody><tr>
+            <td class="valgbot" style="width:85px; height:50px;"><a href="https://www.mobile.bg/" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm0.gif" width="85" height="33" class="noborder" id="tm0" onmouseover="MM_swapImage(&#39;tm0&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm0_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:121px; height:50px;"><a href="https://www.mobile.bg/pcgi/mobile.cgi?pubtype=1&amp;act=1" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm1_sel.gif" width="121" height="33" class="noborder" id="tm1" onmouseover="MM_swapImage(&#39;tm1&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm1_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:82px; height:50px;"><a href="https://www.mobile.bg/pcgi/mobile.cgi?pubtype=1&amp;act=2" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm2.gif" width="82" height="33" class="noborder" id="tm2" onmouseover="MM_swapImage(&#39;tm2&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm2_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:172px; height:50px;"><a href="https://www.mobile.bg/htmls/mobilesdi.html" target="_blank" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm3_sel.gif" width="172" height="33" class="noborder" id="tm3" onmouseover="MM_swapImage(&#39;tm3&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm3_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:141px; height:50px;"><a href="https://toprentacar.bg/" target="_blank" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm8.gif" width="141" height="33" class="noborder" id="tm8" onmouseover="MM_swapImage(&#39;tm8&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm8_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:77px; height:50px;"><a href="https://www.mobile.bg/pcgi/mobile.cgi?act=6&amp;subact=1" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm5.gif" width="77" height="33" class="noborder" id="tm5" onmouseover="MM_swapImage(&#39;tm5&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm5_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+            <td class="valgbot" style="width:158px; height:50px;"><span style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm_bgr.gif" width="158" height="33" class="noborder" alt=""></span></td>
+            <td class="valgbot algright" style="width:144px; height:50px;"><a href="https://www.mobile.bg/pcgi/mobile.cgi?act=16" style="display:block; height:33px;"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/tm7.gif" width="144" height="33" class="noborder" id="tm7" onmouseover="MM_swapImage(&#39;tm7&#39;,&#39;&#39;,&#39;//www.mobile.bg/images/picturess/tm7_sel.gif&#39;,1)" onmouseout="MM_swapImgRestore()" alt=""></a></td>
+        </tr>
+        </tbody></table>
+
+
+    <table width="980" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px; margin-bottom:10px;">
+        <tbody><tr>
+
+
+        </tr>
+        </tbody></table>
+
+
+    <form name="steps" method="post" action="https://www.mobile.bg/pcgi/mobile.cgi" style="margin: 0px; padding: 0px;">
+        <input type="hidden" name="topmenu" value="1">
+        <input type="hidden" name="act" value="1">
+        <input type="hidden" name="subact" value="4">
+        <input type="hidden" name="rub" value="1">
+        <input type="hidden" name="actions" value="1">
+        <input type="hidden" name="pubact" value="1">
+
+        <input type="hidden" name="f1" value="">
+        <input type="hidden" name="f2" value="">
+        <input type="hidden" name="f3" value="2">
+        <input type="hidden" name="step" value="1">
+        <input type="hidden" name="dlm" value="">
+    </form>
+
+
+
+    <table width="980" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px; margin-bottom:5px;">
+        <tbody><tr>
+
+        </tr>
+        </tbody></table>
+    <table width="980" cellpadding="20" cellspacing="0" border="0" style="border:#09F 1px solid; border-top:#09F 3px solid;">
+        <tbody><tr>
+            <td>
+
+                <table width="940" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;">
+                    <tbody>
+                    <tr>
+                        <td width="220"><b>Основна категория</b></td>
+                        <td width="80" rowspan="3" class="valgbot" style="padding-left:20px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/p1.gif" class="noborder" alt=""></td>
+                        <td width="640"><b></b></td>
+                    </tr>
+                    <tr>
+                        <td width="220"><img width="1" height="5" border="0" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif"></td>
+                        <td width="640"><img width="1" height="5" border="0" src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif"></td>
+                    </tr>
+                    <tr>
+                        <td width="220">
+
+                            <select class="sw300" style="width:220px;" onchange="javascript:window.location.href=&#39;//www.mobile.bg/pcgi/mobile.cgi?pubtype=&#39;+this.value+&#39;&amp;act=1&#39;;">
+                                <option selected="" value="1">Автомобили
+                                </option><option value="2">Джипове
+                            </option><option value="3">Бусове
+                            </option><option value="4">Камиони
+                            </option><option value="5">Мотоциклети
+                            </option><option value="6">Селскостопански
+                            </option><option value="7">Индустриални
+                            </option><option value="8">Кари
+                            </option><option value="9">Каравани
+                            </option><option value="a">Яхти и Лодки
+                            </option><option value="b">Ремаркета
+                            </option><option value="c">Велосипеди
+                            </option><option value="u">Части
+                            </option><option value="v">Аксесоари
+                            </option><option value="w">Гуми и джанти
+                            </option><option value="y">Купува
+                            </option><option value="z">Услуги
+
+                            </option></select>
+                        </td>
+                        <td width="640">
+
+                        </td>
+                    </tr>
+                    <tr><td style="height:20px;" colspan="3">&nbsp;</td></tr>
+
+                    </tbody>
+                </table>
+
+
+
+                <form name="pub" method="post" action="https://www.mobile.bg/pcgi/mobile.cgi" style="margin: 0px; padding: 0px;">
+
+                    <input type="hidden" name="topmenu" value="1">
+                    <input type="hidden" name="act" value="1">
+                    <input type="hidden" name="subact" value="4">
+                    <input type="hidden" name="rub" value="1">
+                    <input type="hidden" name="actions" value="1">
+                    <input type="hidden" name="pubact" value="1">
+
+                    <input type="hidden" name="f0" value="5.53.182.72">
+                    <input type="hidden" name="f1" value="">
+                    <input type="hidden" name="f2" value="">
+                    <input type="hidden" name="f3" value="">
+                    <input type="hidden" name="f4" value="">
+                    <input type="hidden" name="f26" value="">
+                    <input type="hidden" name="f27" value="">
+
+
+
+                    <table width="940" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;">
+                        <tbody><tr>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Марка</td>
+                            <td width="10" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Модел</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles">Модификация</td>
+                            <td width="10" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Тип двигател</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:10px" class="pubTitles pubTitlesBlue">Състояние</td>
+                        </tr>
+                        <tr>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f5" onchange="javascript:changemm(document.pub.topmenu,document.pub.f5,document.pub.f6,&#39;1&#39;,&#39;1&#39;)">
+                                    <option selected="" value="">
+                                    </option><optgroup label="A">
+                                    <option value="AC">AC
+                                    </option><option value="Acura">Acura
+                                </option><option value="Aixam">Aixam
+                                </option><option value="Alfa Romeo">Alfa Romeo
+                                </option><option value="Aston martin">Aston martin
+                                </option><option value="Audi">Audi
+                                </option><option value="Austin">Austin
+                                </option></optgroup><optgroup label="B">
+                                    <option value="BMW">BMW
+                                    </option><option value="Bentley">Bentley
+                                </option><option value="Berliner">Berliner
+                                </option><option value="Borgward">Borgward
+                                </option><option value="Brilliance">Brilliance
+                                </option><option value="Bugatti">Bugatti
+                                </option><option value="Buick">Buick
+                                </option></optgroup><optgroup label="C">
+                                    <option value="Cadillac">Cadillac
+                                    </option><option value="Chevrolet">Chevrolet
+                                </option><option value="Chrysler">Chrysler
+                                </option><option value="Citroen">Citroen
+                                </option><option value="Corvette">Corvette
+                                </option></optgroup><optgroup label="D">
+                                    <option value="Dacia">Dacia
+                                    </option><option value="Daewoo">Daewoo
+                                </option><option value="Daihatsu">Daihatsu
+                                </option><option value="Daimler">Daimler
+                                </option><option value="Datsun">Datsun
+                                </option><option value="Dkw">Dkw
+                                </option><option value="Dodge">Dodge
+                                </option><option value="Dr">Dr
+                                </option></optgroup><optgroup label="E">
+                                    <option value="Eagle">Eagle
+                                    </option></optgroup><optgroup label="F">
+                                    <option value="FSO">FSO
+                                    </option><option value="Ferrari">Ferrari
+                                </option><option value="Fiat">Fiat
+                                </option><option value="Ford">Ford
+                                </option></optgroup><optgroup label="G">
+                                    <option value="Geo">Geo
+                                    </option><option value="Great Wall">Great Wall
+                                </option></optgroup><optgroup label="H">
+                                    <option value="Heinkel">Heinkel
+                                    </option><option value="Honda">Honda
+                                </option><option value="Hyundai">Hyundai
+                                </option></optgroup><optgroup label="I">
+                                    <option value="Ifa">Ifa
+                                    </option><option value="Infiniti">Infiniti
+                                </option><option value="Innocenti">Innocenti
+                                </option><option value="Isuzu">Isuzu
+                                </option></optgroup><optgroup label="J">
+                                    <option value="Jaguar">Jaguar
+                                    </option></optgroup><optgroup label="K">
+                                    <option value="Kia">Kia
+                                    </option></optgroup><optgroup label="L">
+                                    <option value="Lada">Lada
+                                    </option><option value="Lamborghini">Lamborghini
+                                </option><option value="Lancia">Lancia
+                                </option><option value="Lexus">Lexus
+                                </option><option value="Lifan">Lifan
+                                </option><option value="Lincoln">Lincoln
+                                </option><option value="Lotus">Lotus
+                                </option></optgroup><optgroup label="M">
+                                    <option value="Maserati">Maserati
+                                    </option><option value="Matra">Matra
+                                </option><option value="Maybach">Maybach
+                                </option><option value="Mazda">Mazda
+                                </option><option value="McLaren">McLaren
+                                </option><option value="Mercedes-Benz">Mercedes-Benz
+                                </option><option value="Mercury">Mercury
+                                </option><option value="Mg">Mg
+                                </option><option value="Microcar">Microcar
+                                </option><option value="Mini">Mini
+                                </option><option value="Mitsubishi">Mitsubishi
+                                </option><option value="Morgan">Morgan
+                                </option><option value="Moskvich">Moskvich
+                                </option></optgroup><optgroup label="N">
+                                    <option value="Nissan">Nissan
+                                    </option></optgroup><optgroup label="O">
+                                    <option value="Oldsmobile">Oldsmobile
+                                    </option><option value="Opel">Opel
+                                </option></optgroup><optgroup label="P">
+                                    <option value="Perodua">Perodua
+                                    </option><option value="Peugeot">Peugeot
+                                </option><option value="Pgo">Pgo
+                                </option><option value="Plymouth">Plymouth
+                                </option><option value="Polonez">Polonez
+                                </option><option value="Pontiac">Pontiac
+                                </option><option value="Porsche">Porsche
+                                </option><option value="Proton">Proton
+                                </option></optgroup><optgroup label="R">
+                                    <option value="Renault">Renault
+                                    </option><option value="Rolls-Royce">Rolls-Royce
+                                </option><option value="Rover">Rover
+                                </option></optgroup><optgroup label="S">
+                                    <option value="SECMA">SECMA
+                                    </option><option value="Saab">Saab
+                                </option><option value="Samand">Samand
+                                </option><option value="Saturn">Saturn
+                                </option><option value="Scion">Scion
+                                </option><option value="Seat">Seat
+                                </option><option value="Shatenet">Shatenet
+                                </option><option value="Shuanghuan">Shuanghuan
+                                </option><option value="Simca">Simca
+                                </option><option value="Skoda">Skoda
+                                </option><option value="Smart">Smart
+                                </option><option value="Ssang yong">Ssang yong
+                                </option><option value="Subaru">Subaru
+                                </option><option value="Suzuki">Suzuki
+                                </option></optgroup><optgroup label="T">
+                                    <option value="Talbot">Talbot
+                                    </option><option value="Tata">Tata
+                                </option><option value="Tavria">Tavria
+                                </option><option value="Tazzari">Tazzari
+                                </option><option value="Terberg">Terberg
+                                </option><option value="Tesla">Tesla
+                                </option><option value="Tofas">Tofas
+                                </option><option value="Toyota">Toyota
+                                </option><option value="Trabant">Trabant
+                                </option><option value="Triumph">Triumph
+                                </option></optgroup><optgroup label="V">
+                                    <option value="VROMOS">VROMOS
+                                    </option><option value="VW">VW
+                                </option><option value="Volga">Volga
+                                </option><option value="Volvo">Volvo
+                                </option></optgroup><optgroup label="W">
+                                    <option value="Warszawa">Warszawa
+                                    </option><option value="Wartburg">Wartburg
+                                </option><option value="Wiesmann">Wiesmann
+                                </option></optgroup><optgroup label="X">
+                                    <option value="Xinshun">Xinshun
+                                    </option></optgroup><optgroup label="Z">
+                                    <option value="Zastava">Zastava
+                                    </option><option value="Zaz">Zaz
+                                </option></optgroup><optgroup label="Д">
+                                    <option value="Други">Други
+                                    </option></optgroup><optgroup label="П">
+                                    <option value="Победа">Победа
+                                    </option></optgroup><optgroup label="С">
+                                    <option value="София">София
+                                    </option></optgroup><optgroup label="Ч">
+                                    <option value="Чайка">Чайка
+
+                                    </option></optgroup></select>
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f6">
+                                    <option value="">
+
+                                    </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px"><input type="text" name="f7" value="" class="sw145" maxlength="50">
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f8">
+                                    <option value="">
+                                    </option><option value="Бензинов">Бензинов
+                                </option><option value="Дизелов">Дизелов
+                                </option><option value="Електрически">Електрически
+                                </option><option value="Хибриден">Хибриден
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:5px"><input type="radio" name="f25" value="1" disabled="">Нов&nbsp;&nbsp;&nbsp;<input type="radio" name="f25" value="0" checked="">Употребяван&nbsp;&nbsp;&nbsp;<input type="radio" name="f25" value="2">За части&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="145" style="padding-top:10px" class="pubTitles">Мощност [к.с.]</td>
+                            <td width="10" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles">Евростандарт</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" colspan="3" style="padding-top:10px" class="pubTitles pubTitlesBlue">Скоростна кутия</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:10px" class="pubTitles pubTitlesBlue">Категория</td>
+                        </tr>
+                        <tr>
+                            <td width="145" style="padding-top:5px"><input type="text" name="f9" value="" class="sw145" maxlength="4" onkeyup="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,1)" onclick="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,3)">
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f29">
+                                    <option value="">
+                                    </option><option value="1">Евро 1
+                                </option><option value="2">Евро 2
+                                </option><option value="3">Евро 3
+                                </option><option value="4">Евро 4
+                                </option><option value="5">Евро 5
+                                </option><option value="6">Евро 6
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" colspan="3" style="padding-top:5px">
+                                <select class="sw300" name="f10">
+                                    <option value="">
+                                    </option><option value="Ръчна">Ръчна
+                                </option><option value="Автоматична">Автоматична
+                                </option><option value="Полуавтоматична">Полуавтоматична
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:5px">
+                                <select class="sw300" name="f11">
+                                    <option value="">
+                                    </option><option value="Ван">Ван
+                                </option><option value="Кабрио">Кабрио
+                                </option><option value="Катафалка">Катафалка
+                                </option><option value="Комби">Комби
+                                </option><option value="Купе">Купе
+                                </option><option value="Линейка">Линейка
+                                </option><option value="Миниван">Миниван
+                                </option><option value="Пикап">Пикап
+                                </option><option value="Седан">Седан
+                                </option><option value="Стреч лимузина">Стреч лимузина
+                                </option><option value="Хечбек">Хечбек
+
+                                </option></select>
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+
+                    <table width="940" cellspacing="0" cellpadding="0" border="0">
+                        <tbody><tr>
+
+                            <td width="10" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Валута</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" colspan="3" style="padding-top:10px" class="pubTitles pubTitlesBlue">Дата на производство</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:10px" class="pubTitles pubTitlesBlue">Пробег</td>
+                        </tr>
+                        <tr>
+                            <td width="145" style="padding-top:5px"><input type="text" name="f12" value="" class="sw145" maxlength="7" onfocus="javascript:pricenegtype()" onkeyup="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,1)" onclick="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,3)">
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f13">
+                                    <option value="лв.">лв.
+                                    </option><option value="USD">USD
+                                </option><option value="EUR">EUR
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f14">
+                                    <option value="">
+                                    </option><option value="януари">януари
+                                </option><option value="февруари">февруари
+                                </option><option value="март">март
+                                </option><option value="април">април
+                                </option><option value="май">май
+                                </option><option value="юни">юни
+                                </option><option value="юли">юли
+                                </option><option value="август">август
+                                </option><option value="септември">септември
+                                </option><option value="октомври">октомври
+                                </option><option value="ноември">ноември
+                                </option><option value="декември">декември
+
+                                </option></select>
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f15">
+                                    <option value="">
+                                    </option><option value="2017">2017
+                                </option><option value="2016">2016
+                                </option><option value="2015">2015
+                                </option><option value="2014">2014
+                                </option><option value="2013">2013
+                                </option><option value="2012">2012
+                                </option><option value="2011">2011
+                                </option><option value="2010">2010
+                                </option><option value="2009">2009
+                                </option><option value="2008">2008
+                                </option><option value="2007">2007
+                                </option><option value="2006">2006
+                                </option><option value="2005">2005
+                                </option><option value="2004">2004
+                                </option><option value="2003">2003
+                                </option><option value="2002">2002
+                                </option><option value="2001">2001
+                                </option><option value="2000">2000
+                                </option><option value="1999">1999
+                                </option><option value="1998">1998
+                                </option><option value="1997">1997
+                                </option><option value="1996">1996
+                                </option><option value="1995">1995
+                                </option><option value="1994">1994
+                                </option><option value="1993">1993
+                                </option><option value="1992">1992
+                                </option><option value="1991">1991
+                                </option><option value="1990">1990
+                                </option><option value="1989">1989
+                                </option><option value="1988">1988
+                                </option><option value="1987">1987
+                                </option><option value="1986">1986
+                                </option><option value="1985">1985
+                                </option><option value="1984">1984
+                                </option><option value="1983">1983
+                                </option><option value="1982">1982
+                                </option><option value="1981">1981
+                                </option><option value="1980">1980
+                                </option><option value="1979">1979
+                                </option><option value="1978">1978
+                                </option><option value="1977">1977
+                                </option><option value="1976">1976
+                                </option><option value="1975">1975
+                                </option><option value="1974">1974
+                                </option><option value="1973">1973
+                                </option><option value="1972">1972
+                                </option><option value="1971">1971
+                                </option><option value="1970">1970
+                                </option><option value="1969">1969
+                                </option><option value="1968">1968
+                                </option><option value="1967">1967
+                                </option><option value="1966">1966
+                                </option><option value="1965">1965
+                                </option><option value="1964">1964
+                                </option><option value="1963">1963
+                                </option><option value="1962">1962
+                                </option><option value="1961">1961
+                                </option><option value="1960">1960
+                                </option><option value="1959">1959
+                                </option><option value="1958">1958
+                                </option><option value="1957">1957
+                                </option><option value="1956">1956
+                                </option><option value="1955">1955
+                                </option><option value="1954">1954
+                                </option><option value="1953">1953
+                                </option><option value="1952">1952
+                                </option><option value="1951">1951
+                                </option><option value="1950">1950
+                                </option><option value="1949">1949
+                                </option><option value="1948">1948
+                                </option><option value="1947">1947
+                                </option><option value="1946">1946
+                                </option><option value="1945">1945
+                                </option><option value="1944">1944
+                                </option><option value="1943">1943
+                                </option><option value="1942">1942
+                                </option><option value="1941">1941
+                                </option><option value="1940">1940
+                                </option><option value="1939">1939
+                                </option><option value="1938">1938
+                                </option><option value="1937">1937
+                                </option><option value="1936">1936
+                                </option><option value="1935">1935
+                                </option><option value="1934">1934
+                                </option><option value="1933">1933
+                                </option><option value="1932">1932
+                                </option><option value="1931">1931
+                                </option><option value="1930">1930
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:5px"><input type="text" name="f16" value="" class="sw145" maxlength="7" onkeyup="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,1)" onclick="javascript:checkfield(this,&#39;Полето приема само цифри от 0 до 9&#39;,3)">
+                                в километри</td>
+                        </tr>
+                        <tr><td valign="top" width="940" colspan="9"><input type="checkbox" name="priceneg" value="99999999" onclick="javascript:pricenegcheck(this,document.pub.f12)">по договаряне</td></tr>
+                        <tr>
+                            <td width="300" colspan="3" style="padding-top:10px" class="pubTitles">Цвят</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Регион</td>
+                            <td width="10" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:10px" class="pubTitles pubTitlesBlue">Населено място</td>
+                            <td width="20" style="padding-top:10px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:10px" class="pubTitles pubTitlesBlue">Валидност на обявата</td>
+                        </tr>
+                        <tr>
+                            <td width="300" colspan="3" style="padding-top:5px">
+                                <select class="sw300" name="f17">
+                                    <option value="">
+                                    </option><option value="Tъмно син">Tъмно син
+                                </option><option value="Банан">Банан
+                                </option><option value="Беата">Беата
+                                </option><option value="Бежов">Бежов
+                                </option><option value="Бордо">Бордо
+                                </option><option value="Бронз">Бронз
+                                </option><option value="Бял">Бял
+                                </option><option value="Винен">Винен
+                                </option><option value="Виолетов">Виолетов
+                                </option><option value="Вишнев">Вишнев
+                                </option><option value="Графит">Графит
+                                </option><option value="Жълт">Жълт
+                                </option><option value="Зелен">Зелен
+                                </option><option value="Златист">Златист
+                                </option><option value="Кафяв">Кафяв
+                                </option><option value="Керемиден">Керемиден
+                                </option><option value="Кремав">Кремав
+                                </option><option value="Лилав">Лилав
+                                </option><option value="Металик">Металик
+                                </option><option value="Оранжев">Оранжев
+                                </option><option value="Охра">Охра
+                                </option><option value="Пепеляв">Пепеляв
+                                </option><option value="Перла">Перла
+                                </option><option value="Пясъчен">Пясъчен
+                                </option><option value="Резидав">Резидав
+                                </option><option value="Розов">Розов
+                                </option><option value="Сахара">Сахара
+                                </option><option value="Светло сив">Светло сив
+                                </option><option value="Светло син">Светло син
+                                </option><option value="Сив">Сив
+                                </option><option value="Син">Син
+                                </option><option value="Слонова кост">Слонова кост
+                                </option><option value="Сребърен">Сребърен
+                                </option><option value="Т.зелен">Т.зелен
+                                </option><option value="Тъмно сив">Тъмно сив
+                                </option><option value="Тъмно син мет.">Тъмно син мет.
+                                </option><option value="Тъмно червен">Тъмно червен
+                                </option><option value="Тютюн">Тютюн
+                                </option><option value="Хамелеон">Хамелеон
+                                </option><option value="Червен">Червен
+                                </option><option value="Черен">Черен
+
+                                </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f18" onchange="javascript:document.pub.submit();">
+                                    <option value="">
+                                    </option><option value="Благоевград">Благоевград
+                                </option><option value="Бургас">Бургас
+                                </option><option value="Варна">Варна
+                                </option><option value="Велико Търново">Велико Търново
+                                </option><option value="Видин">Видин
+                                </option><option value="Враца">Враца
+                                </option><option value="Габрово">Габрово
+                                </option><option value="Добрич">Добрич
+                                </option><option value="Дупница">Дупница
+                                </option><option value="Кърджали">Кърджали
+                                </option><option value="Кюстендил">Кюстендил
+                                </option><option value="Ловеч">Ловеч
+                                </option><option value="Монтана">Монтана
+                                </option><option value="Пазарджик">Пазарджик
+                                </option><option value="Перник">Перник
+                                </option><option value="Плевен">Плевен
+                                </option><option value="Пловдив">Пловдив
+                                </option><option value="Разград">Разград
+                                </option><option value="Русе">Русе
+                                </option><option value="Силистра">Силистра
+                                </option><option value="Сливен">Сливен
+                                </option><option value="Смолян">Смолян
+                                </option><option value="София">София
+                                </option><option value="Стара Загора">Стара Загора
+                                </option><option value="Търговище">Търговище
+                                </option><option value="Хасково">Хасково
+                                </option><option value="Шумен">Шумен
+                                </option><option value="Ямбол">Ямбол
+                                </option><option value="Извън страната">Извън страната
+
+                                </option></select>
+                            </td>
+                            <td width="10" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="10" height="1" border="0"></td>
+                            <td width="145" style="padding-top:5px">
+                                <select class="sw145" name="f19">
+                                    <option value="">
+
+                                    </option></select>
+                            </td>
+                            <td width="20" style="padding-top:5px"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="300" style="padding-top:5px">
+                                <select class="sw300" name="f20">
+                                    <option value="35">35 дни
+                                    </option><option value="49">49 дни
+
+                                </option></select>
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+
+                    <table width="940" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto; margin-top:10px;">
+                        <tbody><tr>
+                            <td valign="top"><label class="extra_cat">Безопасност</label><br><label><input type="checkbox" value="GPS система за проследяване" name="f30">GPS система за проследяване</label><br>
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39;AYC, ASC, TRC, SH-AWD&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Автоматичен контрол на стабилността" name="f31">Автоматичен контрол на стабилността<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39;AFL&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Адаптивни предни светлини" name="f32">Адаптивни предни светлини<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39;ABS&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Антиблокираща система" name="f33">Антиблокираща система<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+
+
+
+
+
+
+
+
+
+
+
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39;Distronic&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Система за контрол на дистанцията" name="f45">Система за контрол на дистанцията<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39;Brake Assist, BAS&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Система за подпомагане на спирането" name="f46">Система за подпомагане на спирането<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                            </td>
+                            <td valign="top"><label class="extra_cat">Комфорт</label><br><label onmouseover="javascript:ShowExtriDescription(this,&#39;ASS, ISG&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Auto Start Stop function" name="f47">Auto Start Stop function<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                                <label><input type="checkbox" value="Bluetooth \ handsfree система" name="f48">Bluetooth \ handsfree система</label><br>
+                                <label><input type="checkbox" value="DVD, TV" name="f49">DVD, TV</label><br>
+                                <label><input type="checkbox" value="Steptronic, Tiptronic" name="f50">Steptronic, Tiptronic</label><br>
+                                <label><input type="checkbox" value="USB, audio\video, IN\AUX изводи" name="f51">USB, audio\video, IN\AUX изводи</label><br>
+                                <label onmouseover="javascript:ShowExtriDescription(this,&#39; Airmatic&#39;);" onmouseout="javascript:HideExtriDescription();"><input type="checkbox" value="Адаптивно въздушно окачване" name="f52">Адаптивно въздушно окачване<img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/info.jpg" width="16" height="16" style="margin:2px 0 -2px 0;"></label><br>
+                                <label><input type="checkbox" value="Безключово палене " name="f53">Безключово палене </label><br>
+                                <label><input type="checkbox" value="Блокаж на диференциала" name="f54">Блокаж на диференциала</label><br>
+                                <label><input type="checkbox" value="Бордкомпютър" name="f55">Бордкомпютър</label><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <br>
+                            </td>
+
+                            <td valign="top"><label class="extra_cat">Защита</label><br><label><input type="checkbox" value="Аларма" name="f106">Аларма</label><br>
+                                <label><input type="checkbox" value="Брониран" name="f107">Брониран</label><br>
+                                <label><input type="checkbox" value="Имобилайзер" name="f108">Имобилайзер</label><br>
+                                <label><input type="checkbox" value="Каско" name="f109">Каско</label>
+
+
+
+
+
+
+
+
+
+
+                            </td>
+
+                        </tr>
+                        </tbody></table>
+
+
+
+                    <table width="940" cellspacing="0" cellpadding="0" border="0" style="margin-top:20px;">
+                        <tbody><tr>
+
+                            <td width="20"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/no.gif" width="20" height="1" border="0"></td>
+                            <td width="620" valign="top">
+
+                                <table class="f-left" width="300" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                        <td valign="top" height="25" colspan="2" class="pubTitles">
+                                            Вашите данни за обратна връзка:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="130" height="28" class="pubTitles pubTitlesBlue">Мобилен телефон:</td>
+                                        <td valign="top" width="170" height="28"><input type="text" name="f22" value="" class="sw170" maxlength="14" onkeyup="javascript:CheckPhone(this)">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="130" height="28" class="pubTitles pubTitlesBlue">E-mail:</td>
+                                        <td valign="top" width="170" height="28"><input type="text" name="f23" value="" class="sw170" maxlength="40">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="130" height="28" class="pubTitles">http://</td>
+                                        <td valign="top" width="170" height="28"><input type="text" name="f24" value="" class="sw170" maxlength="40">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2" width="300" height="86" valign="bottom" style="color:#09F;">Оцветените в <strong>синьо</strong> полета са задължителни!</td>
+                                    </tr>
+                                    </tbody></table>
+                                <div id="phonePopup" class="phonePopup" style="display: none; margin:0 auto;">
+                                    <span id="phone_txt"></span>
+                                    <div style="position:relative;bottom:0px;">
+                                        <span id="phone_arrow" class="phone_arrow"><i></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="f-right" style="width:300px">
+
+                                    <table width="300" cellpadding="0" cellspacing="0" border="0">
+                                    </table>
+
+                                </div>
+                                <div style="clear:both"></div>
+
+                            </td>
+                        </tr>
+
+
+
+                        </tbody></table>
+
+                    <table width="940" cellpadding="0" cellspacing="0" border="0">
+                        <tbody><tr>
+                            <td width="590">
+
+                            </td>
+                            <td width="350" align="right">
+                                <label><input type="checkbox" name="chkcond" value="1"> Съгласен съм с <a href="https://www.mobile.bg/pcgi/mobile.cgi?act=9&amp;mode=4" class="iconLinks" target="_blank">условията за ползване на сайта</a></label><br><br><input type="button" name="subm" style="width:230px; height:40px; font-weight:bold;" value="ПУБЛИКУВАЙ ТЕКСТА" onclick="javascript:pubadv()"><br>
+
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+
+                    <table width="940" border="0" cellspacing="0" cellpadding="10" style="border:#09F 1px solid; border-top:#09F 3px solid;">
+                        <tbody><tr>
+
+                        </tr>
+                        </tbody></table>
+                    <script>var loc=document.location.toString(); if ( loc.indexOf('vipform')>0 ) { var pc=document.getElementById('pubcode'); if ( pc ) pc.focus(); }</script>
+
+                </form>
+
+            </td>
+        </tr>
+        </tbody></table>
+
+    <div id="priceAlert" class="priceAlert" style="display: none;">
+        <ul><li id="err_txt" class="text">Полето приема само цифри от 0 до 9</li><li class="arrow2"><img src="./Безплатно публикуване на обяви за продажба на Автомобили в Mobile.bg_files/alert-arrow.png" width="15" height="8"></li></ul>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="zaplata-footer" id="ZaplataFooter"><a href="https://www.zaplata.bg/" class="zaplata-footer-logo" target="_blank"></a><a href="https://www.mobile.bg/pcgi/mobile.cgi?pubtype=1&amp;act=1#" class="zaplata-footer-close" id="ZaplataFooterClose"></a></div>
+
+
+
+
+
+<div id="logtable" class="LB-white-content" title="fixed" style="width: 535px; height: 440px; left: 188px; position: fixed; top: 10%;"></div>
+<div id="sendpmessage" class="LB-white-content" title="fixed" style="width: 590px; height: 465px; left: 161px; position: fixed; top: 10%;"></div>
+
+<!-- (C)2000-2014 Gemius SA - gemiusAudience / mobile.bg / avtomobili -->
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    var pp_gemius_identifier = 'd7Aw5ANskwh0doF0MZMQd2X2fUp1S0ek1XEXsdVITy..M7';
+    // lines below shouldn't be edited
+    function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+    gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+    (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+        gt.setAttribute('defer','defer'); gt.src=l+'://gabg.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+    //--><!]]>
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        if (!getcookieval("cookie_check"))
+            document.getElementById('cookie-statement').style.cssText  = 'display:block';
+    });
+</script>
+
+
+<div id="light_box_fade" class="LB-black-overlay" style="height: 1914px; width: 100%;"></div><div id="ExtriDesc" class="ExtriDesc" style="display: none; z-index: 100; top: 518px; left: 209px;">
+    <div style="position:relative;bottom:0px;">
+        <span id="descarrow" class="arrow" style="bottom: -39px;"><i></i></span>
+    </div>
+    <span id="descr_txt"></span>
+</div></body></html>
